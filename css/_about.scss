@@ -1,0 +1,22 @@
+.about-center {
+
+    &-img,
+    &-info {
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (min-width:992px) {
+    .about-center {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        &-img,
+        &-info {
+            flex: 0 0 calc(50% - 2rem);
+            margin-bottom: 0;
+            align-self: center;
+        }
+    }
+}
