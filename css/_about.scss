@@ -20,3 +20,25 @@
         }
     }
 }
+
+@media screen and (min-width:1170px) {
+    .about-center-img::before {
+        content: "";
+        position: absolute;
+        border: 0.5rem solid $clr-primary-5;
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        top: -1.5rem;
+        left: -1.5rem;
+        z-index: -1;
+    }
+
+    .about-center-img {
+        position: relative;
+    }
+
+    .about-photo {
+        position: relative;
+    }
+}

@@ -1,13 +1,13 @@
 .hero {
     min-height: 100vh;
-    background: var(--clr-primary-5);
+    background: $clr-primary-5;
     display: flex;
     justify-content: center;
     align-items: center;
 
     &-banner {
         text-align: center;
-        color: var(--clr-white);
+        color: $clr-white;
         padding: 0 3rem;
 
         h1 {
@@ -18,21 +18,21 @@
             max-width: 35rem;
             margin-left: auto;
             margin-right: auto;
-            color: var(--clr-white);
-            letter-spacing: var(--spacing);
+            color: $clr-white;
+            letter-spacing: $spacing;
         }
     }
 
     &-btn {
         padding: 0.9rem 1.6rem;
         font-size: 1.25rem;
-        background: var(--clr-white);
-        color: var(--clr-primary-5);
+        background: $clr-white;
+        color: $clr-primary-5;
 
         &:hover {
             background: transparent;
-            color: var(--clr-white);
-            border: var(--clr-white);
+            color: $clr-white;
+            border: $clr-white;
         }
     }
 }
