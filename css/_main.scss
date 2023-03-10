@@ -57,15 +57,15 @@ a {
     text-decoration: none;
 }
 
-img {
-    width: 100%;
-    display: block;
-}
-
-// img:not(.nav-logo) {
+// img {
 //     width: 100%;
 //     display: block;
 // }
+
+img:not(.nav-logo) {
+    width: 100%;
+    display: block;
+}
 
 h1,
 h2,

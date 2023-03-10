@@ -22,7 +22,7 @@ ul {
 a {
   text-decoration: none; }
 
-img {
+img:not(.nav-logo) {
   width: 100%;
   display: block; }
 
@@ -106,6 +106,54 @@ p {
 @media screen and (min-width: 992px) {
   .section-center {
     width: 95vw; } }
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  z-index: 2; }
+  .navbar .nav-center {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto; }
+  .navbar .nav-icons {
+    display: none; }
+  .navbar .nav-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem; }
+  .navbar .nav-toggle {
+    background: transparent;
+    border: transparent;
+    font-size: 1.5rem;
+    color: #2caeba;
+    cursor: pointer;
+    transition: all 0.3s linear; }
+    .navbar .nav-toggle:hover {
+      transform: scale(1.2); }
+  .navbar .nav-link {
+    display: block;
+    font-size: 1rem;
+    padding: 1rem 2rem;
+    text-transform: capitalize;
+    letter-spacing: 0.25rem;
+    transition: all 0.3s linear;
+    color: #102a42;
+    cursor: pointer; }
+    .navbar .nav-link:hover {
+      color: #044e53;
+      background: #88ebf2;
+      padding-left: 2.25rem; }
+  .navbar .nav-links {
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s linear; }
+  .navbar .show-links {
+    height: 280px; }
+
 .hero {
   min-height: 100vh;
   background: #2caeba;
