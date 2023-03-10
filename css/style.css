@@ -266,5 +266,49 @@ p {
 @media screen and (min-width: 1170px) {
   .tour-card {
     flex: 0 0 calc(33.333% - 2rem); } }
+.contact {
+  background: #2caeba; }
+  .contact-title {
+    color: #fff; }
+    .contact-title p {
+      color: burlywood; }
+  .contact-form {
+    display: flex;
+    max-width: 28rem; }
+    .contact-form .form-control {
+      flex: 1 1 auto;
+      color: #617d98; }
+      .contact-form .form-control::placeholder {
+        color: inherit; }
+    .contact-form .form-control,
+    .contact-form .btn-submit {
+      padding: 0.375rem 0.75rem;
+      font-size: 1rem;
+      line-height: 1.5;
+      font-weight: 300;
+      text-transform: capitalize;
+      letter-spacing: 0.25rem;
+      background: #fff;
+      border: transparent; }
+    .contact-form .btn-submit {
+      font-family: "Lato", sans-serif;
+      margin-left: 0.5rem;
+      background: #88ebf2;
+      color: #044e53; }
+      .contact-form .btn-submit:hover {
+        background-color: #044e53;
+        color: #fff; }
+
+@media screen and (min-width: 992px) {
+  .contact-center {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+
+  .contact-form {
+    align-self: flex-start;
+    flex: 1 1 auto;
+    max-width: 100%;
+    padding-left: 2rem; } }
 
 /*# sourceMappingURL=style.css.map */
