@@ -344,5 +344,35 @@ p {
 @media screen and (min-width: 992px) {
   .gallery-img-container {
     flex: 0 0 25%; } }
+.footer {
+  background: #102a42;
+  text-align: center;
+  padding-left: 2rem;
+  padding-right: 2rem; }
+  .footer-links, .footer-icons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap; }
+  .footer .footer_link {
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 1rem;
+    margin-right: 1rem;
+    letter-spacing: 0.25rem;
+    transition: all 0.3s linear; }
+    .footer .footer_link:hover {
+      color: #2caeba; }
+  .footer .footer-icon {
+    font-size: 2rem;
+    margin-right: 1rem;
+    color: #88ebf2;
+    transition: all 0.3s linear; }
+    .footer .footer-icon:hover {
+      color: #2caeba; }
+  .footer .copyright {
+    text-transform: capitalize;
+    letter-spacing: 0.25rem;
+    color: #fff; }
 
 /*# sourceMappingURL=style.css.map */
