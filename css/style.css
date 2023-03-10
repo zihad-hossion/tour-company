@@ -310,5 +310,39 @@ p {
     flex: 1 1 auto;
     max-width: 100%;
     padding-left: 2rem; } }
+.gallery-img-container {
+  position: relative;
+  background: #2caeba; }
+  .gallery-img-container .gallery-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 2rem;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    opacity: 0;
+    cursor: pointer;
+    transition: all 0.3s linear; }
+  .gallery-img-container .gallery-img {
+    height: 17rem;
+    object-fit: cover;
+    transition: all 0.3s linear; }
+
+.gallery-img-container:hover .gallery-img {
+  opacity: 0.3; }
+
+.gallery-img-container:hover .gallery-icon {
+  opacity: 1; }
+
+@media screen and (min-width: 768px) {
+  .gallery-center {
+    display: flex;
+    flex-wrap: wrap; }
+
+  .gallery-img-container {
+    flex: 0 0 50%; } }
+@media screen and (min-width: 992px) {
+  .gallery-img-container {
+    flex: 0 0 25%; } }
 
 /*# sourceMappingURL=style.css.map */
