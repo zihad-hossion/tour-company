@@ -1,6 +1,12 @@
 .contact {
     background: $clr-primary-5;
 
+    &-center {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
     &-title {
         color: $clr-white;
 
@@ -12,6 +18,10 @@
     &-form {
         display: flex;
         max-width: 28rem;
+        align-self: flex-start;
+        flex: 1 1 auto;
+        padding-left: 2rem;
+        gap: .5rem;
 
         .form-control {
             flex: 1 1 auto;
@@ -36,7 +46,6 @@
 
         .btn-submit {
             font-family: $ff-primary;
-            margin-left: 0.5rem;
             background: $clr-primary-8;
             color: $clr-primary-1;
 
@@ -48,17 +57,24 @@
     }
 }
 
-@media screen and (min-width:992px) {
-    .contact-center {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
+@media (max-width:992px) {
 
-    .contact-form {
-        align-self: flex-start;
-        flex: 1 1 auto;
-        max-width: 100%;
-        padding-left: 2rem;
+    .contact {
+        &-center {
+            justify-content: center;
+        }
+
+        &-form {
+            flex-direction: column;
+            padding-left: 0rem;
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .contact {
+        &-title {
+            text-align: center;
+        }
     }
 }

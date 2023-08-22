@@ -24,17 +24,43 @@
     }
 }
 
+#mob {
+    display: none;
+
+    .nav-links {
+        width: 100%;
+        background: #fff;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%, -0%);
+        justify-content: space-evenly;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .menu-bar {
+        i {
+            font-size: 1.5rem;
+        }
+    }
+}
+
 .hero {
     min-height: 100vh;
-    background: $clr-primary-5;
     display: flex;
     justify-content: center;
     align-items: center;
+    background: linear-gradient(rgba(44, 174, 186, 0.7),
+            rgba(0, 0, 0, 0.7)),
+        url("../images/main.jpeg") center/cover no-repeat;
 
     &-banner {
         text-align: center;
         color: $clr-white;
-        padding: 0 3rem;
+        padding: 0rem 3rem;
 
         h1 {
             text-transform: uppercase;
@@ -63,18 +89,78 @@
     }
 }
 
-@media screen and (min-width:768px) {
+@media (max-width:992px) {
+    #deskBar {
+        display: none;
+    }
+
+    #mob {
+        display: flex;
+    }
+
     .hero {
-        background: linear-gradient(rgba(44, 174, 186, 0.7),
-                rgba(0, 0, 0, 0.7)),
-            url("../images/main.jpeg") center/cover no-repeat;
+        &-banner {
+            padding: 0rem 2rem;
+
+            h1 {
+                font-size: 3rem;
+            }
+        }
+    }
+}
+
+@media (max-width:768px) {
+    #mob {
+        .nav-links {
+            background-color: rgba($color: #fff, $alpha: 0.75);
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    .hero {
+        background: $clr-primary-5;
 
         &-banner {
             padding: 0;
+
+            h1 {
+                font-size: 2rem;
+            }
 
             p {
                 max-width: 45rem;
             }
         }
+
+        &-btn {
+            padding: 0.6rem 1.25rem;
+            font-size: 1rem;
+        }
+
+    }
+}
+
+@media (max-width:500px) {
+    .hero {
+        background: $clr-primary-5;
+
+        &-banner {
+            padding: 0;
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            p {
+                max-width: 45rem;
+            }
+        }
+
+        &-btn {
+            padding: 0.6rem 1.25rem;
+            font-size: 1rem;
+        }
+
     }
 }

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
 
@@ -16,7 +16,7 @@
 <body>
     <!-- header start -->
     <header id="home">
-        <nav class="navbar">
+        <nav class="navbar" id="deskBar">
             <img src="./images/logo.svg" class="nav-logo" alt="logo image">
 
             <ul class="nav-links" id="nav-links">
@@ -27,6 +27,20 @@
                 <li><a href="#contact" class="nav-link scroll-link">Contact</a></li>
                 <li><a href="#gallery" class="nav-link scroll-link">Gallery</a></li>
             </ul>
+        </nav>
+        <nav class="navbar mob" id="mob">
+            <img src="./images/logo.svg" class="nav-logo" alt="logo image">
+
+            <ul class="nav-links hidden" id="nav-links">
+                <li><a href="#home" class="nav-link scroll-link">Home</a></li>
+                <li><a href="#about" class="nav-link scroll-link">About</a></li>
+                <li><a href="#services" class="nav-link scroll-link">Services</a></li>
+                <li><a href="#featured" class="nav-link scroll-link">Featured</a></li>
+                <li><a href="#contact" class="nav-link scroll-link">Contact</a></li>
+                <li><a href="#gallery" class="nav-link scroll-link">Gallery</a></li>
+            </ul>
+
+            <li class="menu-bar"><i class="fa-solid fa-bars"></i></li>
         </nav>
         <div class="hero">
             <div class="hero-banner">
@@ -247,9 +261,6 @@
                 <button type="submit" class="btn-submit">Submit</button>
             </form>
         </div>
-
-
-
     </section>
     <!-- contact end here -->
 
@@ -317,7 +328,7 @@
         </p>
     </footer>
     <!-- footer start here -->
-    <link rel="stylesheet" href="app.js">
+    <script src="app.js"></script>
 </body>
 
 </html>
